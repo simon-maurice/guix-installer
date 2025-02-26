@@ -88,8 +88,12 @@
                     (channels %channels))))))
 
     ;; Add some extra packages useful for the installation process
-    (packages
-     (append (list git curl stow vim emacs-no-x-toolkit)
+    ;;(packages
+    ;; (append (list git curl stow vim emacs-no-x-toolkit)
+    ;;         (operating-system-packages installation-os)))))
+
+   (packages
+     (append (list emacs-no-x-toolkit)
              (operating-system-packages installation-os)))))
 
 installation-os-nonfree
